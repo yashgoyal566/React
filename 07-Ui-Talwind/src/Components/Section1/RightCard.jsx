@@ -1,0 +1,14 @@
+import React from 'react'
+import { ArrowRight } from 'lucide-react';
+import RightCardContent from "./RightCardContent";
+const RightCard = (props) => {
+  return (
+    <div className=" h-full shrink-0 rounded-4xl w-80 relative overflow-hidden">
+     <img  className=" h-full w-full object-cover" src={props.img} alt="professional" />
+     <RightCardContent id={props.id} tag={props.tag}/>
+
+    </div>
+  )
+}
+
+export default RightCard
